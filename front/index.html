@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <p class="header-title">ShoppingList</p>
+    </header>
+    <div class="container">
+
+        <div id="items-box" class="box">
+            <div class="box-title">
+                <p>Add Your Items Here</p>
+            </div>
+            <div class="box-body">
+                <ul class="items">
+                    <div class="item">
+                        <input class="item-checkbox" type="checkbox" id="item1" name="item" value="Bread">
+                        <span class="item-name" for="item1">Bread</span>
+                        <span class="delete-item">x</span>
+                    </div>
+                    <div class="item">
+                        <input class="item-checkbox" type="checkbox" id="item1" name="item" value="Bread">
+                        <span class="item-name" for="item1">Milk</span>
+                        <span class="delete-item">x</span>
+                    </div>
+                    <div class="item">
+                        <input class="item-checkbox" type="checkbox" id="item1" name="item" value="Bread">
+                        <span class="item-name" for="item1">Eggs</span>
+                        <span class="delete-item">x</span>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <div id="details-box" class="box">
+            <div class="box-title">
+                <p><span id="details-title-item-name"></span> Details</p>
+            </div>
+            <div class="box-body"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

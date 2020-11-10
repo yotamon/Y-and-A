@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 15px;
+    background: linear-gradient(90deg, rgba(0, 229, 145, 1), rgba(47, 239, 188, 1));
+}
+
+header .header-title {
+    font-size: 2em;
+    color: white;
+}
+
+.container {
+    max-inline-size: 800px;
+    margin: auto;
+    text-align: center;
+    margin-block-start: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box .box-title {
+    color: white;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    text-align: start;
+}
+
+.box .box-body {
+    border: 1px solid #999999;
+    min-block-size: 300px;
+}
+
+#items-box {
+    inline-size: 300px;
+}
+
+#details-box {
+    display: none;
+    inline-size: 500px;
+}
+
+#details-box.active {
+    display: block;
+}
+
+.box-title {
+    background: linear-gradient(90deg, rgba(0, 229, 145, 1), rgba(47, 239, 188, 1));
+}
+
+.items .item {
+    padding: 5px 10px;
+    border-bottom: 1px solid #999999;
+    text-align: start;
+}
+
+.items .item .item-checkbox {
+    margin-inline-end: 5px;
+}
+
+.items .item .item-name {
+    color: #999999;
+}
+
+.items .item .delete-item {
+    float: right;
+    color: red;
+    display: none;
+}
+
+.items .item.active .item-name {
+    color: black;
+}
+
+.items .item.checked .item-name {
+    text-decoration: line-through;
+}
+
+.items .item.active .delete-item{
+    display: block;
+}
+
+.items .item-checkbox:checked > .delete-item{
+    display: none !important;
+}
